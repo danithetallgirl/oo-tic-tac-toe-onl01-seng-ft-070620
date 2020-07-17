@@ -69,10 +69,7 @@ class TicTacToe
     turn_count % 2 == 0 ? "X" : "O"
   end
 
-
-
   def won?
-
     board_empty = @board.none? { |i| i == "X" || i = "O"}
     if board_empty
       false
@@ -84,7 +81,6 @@ class TicTacToe
       end
       return false
   end
-end
 
   def full?
     @board.all? { |i| i =="X" || i == "O"}
